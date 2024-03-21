@@ -11,7 +11,7 @@ struct TabBarView: View {
     var body: some View {
         TabView {
             NavigationView {
-                HomeView()
+                HomeView(user: User.mockUser)
             }
             .tabItem {
                 Image(systemName: "house")
