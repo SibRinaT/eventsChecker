@@ -43,6 +43,24 @@ struct HomeView: View {
             Text("Спец. мероприятия подобранные для вас")
                 .bold()
             EventAdsView(image1: "", image2: "", image3: "", image4: "")
+            
+            VStack {
+                HStack {
+                    NavigationLink(destination: testView()) {
+                        OtherWindowView(icon: "", title: "", text: "")
+                    }
+                    NavigationLink(destination: testView()) {
+                        OtherWindowView(icon: "", title: "", text: "")
+                    }
+                }
+                HStack {
+                    NavigationLink(destination: testView()) {
+                        OtherWindowView(icon: "", title: "", text: "")
+                    }
+                    NavigationLink(destination: testView()) {
+                        OtherWindowView(icon: "", title: "", text: "")
+                    }                }
+            }
         }
     }
 }

@@ -18,6 +18,7 @@
 		2E8C0FFD2BAC9C6400013F12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C0FFC2BAC9C6400013F12 /* User.swift */; };
 		2E8C0FFF2BAC9DA100013F12 /* EventAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C0FFE2BAC9DA100013F12 /* EventAdsView.swift */; };
 		2E957F312BADF318001CC9B8 /* OtherWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E957F302BADF318001CC9B8 /* OtherWindowView.swift */; };
+		2E957F332BADFA5D001CC9B8 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E957F322BADFA5D001CC9B8 /* testView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2E8C0FFC2BAC9C6400013F12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E8C0FFE2BAC9DA100013F12 /* EventAdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdsView.swift; sourceTree = "<group>"; };
 		2E957F302BADF318001CC9B8 /* OtherWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherWindowView.swift; sourceTree = "<group>"; };
+		2E957F322BADFA5D001CC9B8 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2E957F302BADF318001CC9B8 /* OtherWindowView.swift */,
 				2E8C0FF92BAC9BB800013F12 /* RectangleProfileHomeView.swift */,
 				2E8C0FFE2BAC9DA100013F12 /* EventAdsView.swift */,
+				2E957F322BADFA5D001CC9B8 /* testView.swift */,
 			);
 			path = HelpViews;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				2E8C0FFF2BAC9DA100013F12 /* EventAdsView.swift in Sources */,
 				2E8C0FFA2BAC9BB800013F12 /* RectangleProfileHomeView.swift in Sources */,
 				2E8C0FFD2BAC9C6400013F12 /* User.swift in Sources */,
+				2E957F332BADFA5D001CC9B8 /* testView.swift in Sources */,
 				2E8C0FF62BAB511700013F12 /* HomeView.swift in Sources */,
 				2E957F312BADF318001CC9B8 /* OtherWindowView.swift in Sources */,
 				2E8C0FF22BAB4A1600013F12 /* SplashView.swift in Sources */,

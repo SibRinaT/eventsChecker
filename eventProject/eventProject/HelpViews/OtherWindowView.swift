@@ -18,6 +18,7 @@ struct OtherWindowView: View {
                 .frame(width: 169, height: 169)
                 .foregroundColor(Color(.gray))
                 .cornerRadius(15)
+                .opacity(0.25)
                 .overlay (
                     VStack(alignment:.leading){
                         Image(icon)
@@ -37,5 +38,5 @@ struct OtherWindowView: View {
 }
 
 #Preview {
-    OtherWindowView(icon: "", title: "", text: "")
+    OtherWindowView(icon: "mapIcon", title: "Список мероприятий", text: "Найдите подходящее для вас и вашей семьи мероприятие")
 }
