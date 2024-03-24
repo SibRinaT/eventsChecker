@@ -13,36 +13,73 @@ struct EventAdsView: View {
     @State var image3: String
     @State var image4: String
 
+    @State var adText1: String
+    @State var adText2: String
+    @State var adText3: String
+    @State var adText4: String
+
     var body: some View {
         
         
         
         ScrollView(.horizontal, showsIndicators: false) {
             HStack() {
-                Rectangle()
-                    .overlay(
-                        Image(image1)
-                    )
-                    .cornerRadius(10)
-                    .frame(width: 166, height: 100)
-                Rectangle()
-                    .overlay(
-                        Image(image2)
-                    )
-                    .cornerRadius(10)
-                    .frame(width: 166, height: 100)
-                Rectangle()
-                    .overlay(
-                        Image(image3)
-                    )
-                    .cornerRadius(10)
-                    .frame(width: 166, height: 100)
-                Rectangle()
-                    .overlay(
-                        Image(image4)
-                    )
-                    .cornerRadius(10)
-                    .frame(width: 166, height: 100)
+                VStack {
+                    Rectangle()
+                        .overlay(
+                            VStack {
+                                Image(image1)
+                                    .scaledToFit()
+                            }
+                        )
+                        .cornerRadius(10)
+                        .frame(width: 166, height: 100)
+                    Text(adText1)
+                        .foregroundColor(.black)
+                        .bold()
+                }
+                VStack {
+                    Rectangle()
+                        .overlay(
+                            VStack {
+                                Image(image2)
+                                    .scaledToFit()
+                            }
+                        )
+                        .cornerRadius(10)
+                        .frame(width: 166, height: 100)
+                    Text(adText2)
+                        .foregroundColor(.black)
+                        .bold()
+                }
+                VStack {
+                    Rectangle()
+                        .overlay(
+                            VStack {
+                                Image(image3)
+                                    .scaledToFit()
+                            }
+                        )
+                        .cornerRadius(10)
+                        .frame(width: 166, height: 100)
+                    Text(adText3)
+                        .foregroundColor(.black)
+                        .bold()
+                }
+                VStack {
+                    Rectangle()
+                        .overlay(
+                            VStack {
+                                Image(image4)
+                                    .scaledToFit()
+                            }
+                        )
+                        .cornerRadius(10)
+                        .frame(width: 166, height: 100)
+                    Text(adText4)
+                        .foregroundColor(.black)
+                        .bold()
+                }
             }
             .padding()
         }
@@ -50,5 +87,5 @@ struct EventAdsView: View {
 }
 
 #Preview {
-    EventAdsView(image1: "", image2: "", image3: "", image4: "")
+    EventAdsView(image1: "", image2: "", image3: "", image4: "", adText1: "", adText2: "", adText3: "", adText4: "")
 }

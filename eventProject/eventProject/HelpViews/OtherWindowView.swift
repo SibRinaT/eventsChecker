@@ -16,22 +16,26 @@ struct OtherWindowView: View {
         VStack {
             Rectangle()
                 .frame(width: 169, height: 169)
-                .foregroundColor(Color(.gray))
+                .foregroundColor(Color("orangeColor"))
                 .cornerRadius(15)
                 .opacity(0.25)
                 .overlay (
                     VStack(alignment:.leading){
                         Image(icon)
+                            .resizable()
+                            .frame(width: 30, height: 30)
                             .foregroundColor(.white)
                         Text(title)
-                            .font(.title2)
+                            .multilineTextAlignment(.leading)
+                            .font(.headline)
                             .bold()
-                            .foregroundColor(.white)
+                            .foregroundColor(Color("blackColor"))
                         Text(text)
+                            .multilineTextAlignment(.leading)
                             .font(.caption)
-                            .foregroundColor(.white)
-                        
+                            .foregroundColor(Color("blackColor"))
                     }
+                        .padding(.horizontal, 5)
                 )
         }
     }

@@ -22,7 +22,7 @@ struct HomeView: View {
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(lineWidth: 1).foregroundColor(Color.white))
                         } else {
                             Image("KaneIcon")
-
+                            
                         }
                         VStack(alignment: .leading) {
                             Text("Привет " + user.first_name + "!")
@@ -37,31 +37,35 @@ struct HomeView: View {
                 )
                 .cornerRadius(10)
                 .clipped()
-            .foregroundColor(Color("MainColor"))
-            .frame(height: 91)     
+                .foregroundColor(Color("MainColor"))
+                .frame(height: 91)
             
             Text("Спец. мероприятия подобранные для вас")
                 .bold()
-            EventAdsView(image1: "", image2: "", image3: "", image4: "")
+            EventAdsView(image1: "ad1", image2: "ad2", image3: "ad3", image4: "ad4", adText1: "Уроки вышивания", adText2: "Кружок для детей", adText3: "Концерт", adText4: "День саморазвития")
             
             VStack {
                 HStack {
                     NavigationLink(destination: testView()) {
-                        OtherWindowView(icon: "", title: "", text: "")
+                        OtherWindowView(icon: "eventIcon", title: "Список мероприятий", text: "Найдите подходящее для вас и вашей семьи мероприятие")
                     }
                     NavigationLink(destination: testView()) {
-                        OtherWindowView(icon: "", title: "", text: "")
+                        OtherWindowView(icon: "mapIcon", title: "Геолокация", text: "Настройте мероприятия для места где вы находитесь")
                     }
                 }
                 HStack {
                     NavigationLink(destination: testView()) {
-                        OtherWindowView(icon: "", title: "", text: "")
+                        OtherWindowView(icon: "familyIcon", title: "Моя семья", text: "Записывайтесь и следите за мероприятими на которые идут ваши члены семьи")
                     }
                     NavigationLink(destination: testView()) {
-                        OtherWindowView(icon: "", title: "", text: "")
+                        OtherWindowView(icon: "supportIcon", title: "ТехПоддержка", text: "Задайте вопрос на который мы найдём ответ!")
                     }                }
             }
+            Spacer()
         }
+        .background(Color("whiteColor"))
+//        .edgesIgnoringSafeArea(.all)
+        .padding(.horizontal, 10)
     }
 }
 

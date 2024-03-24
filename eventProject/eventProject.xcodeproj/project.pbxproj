@@ -72,7 +72,6 @@
 				2E8C0FE32BAB48B500013F12 /* EventProjectApp.swift */,
 				2E8C0FE52BAB48B500013F12 /* ContentView.swift */,
 				2E8C0FF12BAB4A1600013F12 /* SplashView.swift */,
-				2E8C0FE72BAB48B700013F12 /* Assets.xcassets */,
 				2E8C0FE92BAB48B700013F12 /* Preview Content */,
 				2E8C0FF72BAB511B00013F12 /* TabBarViews */,
 			);
@@ -82,6 +81,7 @@
 		2E8C0FE92BAB48B700013F12 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C0FE72BAB48B700013F12 /* Assets.xcassets */,
 				2E8C0FEA2BAB48B700013F12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
