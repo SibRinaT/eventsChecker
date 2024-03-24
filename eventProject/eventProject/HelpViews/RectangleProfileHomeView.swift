@@ -13,18 +13,18 @@ struct RectangleProfileHomeView: View {
             .overlay (
                 HStack {
                     Circle()
-                        .foregroundColor(Color(.pink))
+                        .foregroundColor(Color("orangeColor"))
                         .position(CGPoint(x: 35.0, y: 120.0))
                         .frame(height: 122)
                     Circle()
-                        .foregroundColor(Color(.pink))
+                        .foregroundColor(Color("orangeColor"))
                         .position(CGPoint(x: 160.0, y: 10.0))
                         .frame(height: 122)
                 }
             )
             .cornerRadius(10)
             .clipped()
-            .foregroundColor(.red)
+            .foregroundColor(Color("orangeColor"))
             .frame(height: 91)
             .padding(.horizontal)
     }

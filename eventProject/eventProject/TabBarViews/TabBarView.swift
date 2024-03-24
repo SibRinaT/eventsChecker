@@ -15,8 +15,39 @@ struct TabBarView: View {
             }
             .tabItem {
                 Image(systemName: "house")
+                    .foregroundColor(Color("blackColor"))
                 Text("Home")
+                    .foregroundColor(Color("blackColor"))
             }
+            NavigationView {
+                HomeView(user: User.mockUser)
+            }
+            .tabItem {
+                Image(systemName: "map")
+                    .foregroundColor(Color("blackColor"))
+                Text("Home")
+                    .foregroundColor(Color("blackColor"))
+            }
+            NavigationView {
+                HomeView(user: User.mockUser)
+            }
+            .tabItem {
+                Image(systemName: "figure.2.and.child.holdinghands")
+                    .foregroundColor(Color("blackColor"))
+                Text("Home")
+                    .foregroundColor(Color("blackColor"))
+            }
+            NavigationView {
+                HomeView(user: User.mockUser)
+            }
+            .tabItem {
+                Image(systemName: "questionmark.circle.fill")
+                    .foregroundColor(Color("blackColor"))
+                Text("Home")
+                    .foregroundColor(Color("blackColor"))
+            }
+            
+        
         }
     }
 }

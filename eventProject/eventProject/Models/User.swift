@@ -52,6 +52,6 @@ struct NewPassResponse: Codable {
 
 extension User {
     static var mockUser: User {
-        User(first_name: "Harry", avatarUrl: "https://i.pravatar.cc/50", balance: "1000", email: "potter@gmail.com")
+        User(first_name: "Иван", avatarUrl: "https://i.pravatar.cc/50", balance: "1000", email: "potter@gmail.com")
     }
 }

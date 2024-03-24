@@ -22,16 +22,15 @@ struct HomeView: View {
                                 .overlay(RoundedRectangle(cornerRadius: 30).stroke(lineWidth: 1).foregroundColor(Color.white))
                         } else {
                             Image("KaneIcon")
-                            
                         }
                         VStack(alignment: .leading) {
                             Text("Привет " + user.first_name + "!")
                                 .bold()
                                 .font(.title2)
-                                .foregroundColor(.white)
-                            Text("We trust you are having a great time")
+                                .foregroundColor(Color("blackColor"))
+                            Text("Вы сможете отлично провести время!")
                                 .font(.caption2)
-                                .foregroundColor(Color(.gray))
+                                .foregroundColor(Color("blackColor"))
                         }
                     }
                 )
@@ -46,18 +45,18 @@ struct HomeView: View {
             
             VStack {
                 HStack {
-                    NavigationLink(destination: testView()) {
+                    NavigationLink(destination: EventListView()) {
                         OtherWindowView(icon: "eventIcon", title: "Список мероприятий", text: "Найдите подходящее для вас и вашей семьи мероприятие")
                     }
-                    NavigationLink(destination: testView()) {
+                    NavigationLink(destination: MapView()) {
                         OtherWindowView(icon: "mapIcon", title: "Геолокация", text: "Настройте мероприятия для места где вы находитесь")
                     }
                 }
                 HStack {
-                    NavigationLink(destination: testView()) {
+                    NavigationLink(destination: FamilyView()) {
                         OtherWindowView(icon: "familyIcon", title: "Моя семья", text: "Записывайтесь и следите за мероприятими на которые идут ваши члены семьи")
                     }
-                    NavigationLink(destination: testView()) {
+                    NavigationLink(destination: SupportView()) {
                         OtherWindowView(icon: "supportIcon", title: "ТехПоддержка", text: "Задайте вопрос на который мы найдём ответ!")
                     }                }
             }
