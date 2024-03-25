@@ -38,5 +38,7 @@ struct EventListView: View {
 }
 
 #Preview {
-    EventListView()
+    NavigationStack {
+        EventListView()
+    }
 }
