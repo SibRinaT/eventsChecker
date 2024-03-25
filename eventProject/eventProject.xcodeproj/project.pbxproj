@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2F928F2BB12816004AB4FE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F928E2BB12816004AB4FE /* MockData.swift */; };
 		2E79A6C12BB0AC8500A4A8F4 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A6C02BB0AC8500A4A8F4 /* EventListView.swift */; };
 		2E79A6C32BB0ACA100A4A8F4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A6C22BB0ACA100A4A8F4 /* MapView.swift */; };
 		2E79A6C52BB0ACC900A4A8F4 /* FamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E79A6C42BB0ACC900A4A8F4 /* FamilyView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2F928E2BB12816004AB4FE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		2E79A6C02BB0AC8500A4A8F4 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		2E79A6C22BB0ACA100A4A8F4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2E79A6C42BB0ACC900A4A8F4 /* FamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2F928D2BB127F1004AB4FE /* MockData  */ = {
+			isa = PBXGroup;
+			children = (
+				2E2F928E2BB12816004AB4FE /* MockData.swift */,
+			);
+			path = "MockData ";
+			sourceTree = "<group>";
+		};
 		2E8C0FD72BAB48B500013F12 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		2E8C0FE22BAB48B500013F12 /* eventProject */ = {
 			isa = PBXGroup;
 			children = (
+				2E2F928D2BB127F1004AB4FE /* MockData  */,
 				2E8C0FFB2BAC9C5400013F12 /* Models */,
 				2E8C0FF82BAC9B9600013F12 /* HelpViews */,
 				2E8C0FE32BAB48B500013F12 /* EventProjectApp.swift */,
@@ -207,6 +218,7 @@
 				2E8C0FFD2BAC9C6400013F12 /* User.swift in Sources */,
 				2E79A6C12BB0AC8500A4A8F4 /* EventListView.swift in Sources */,
 				2E957F332BADFA5D001CC9B8 /* testView.swift in Sources */,
+				2E2F928F2BB12816004AB4FE /* MockData.swift in Sources */,
 				2E8C0FF62BAB511700013F12 /* HomeView.swift in Sources */,
 				2E957F312BADF318001CC9B8 /* OtherWindowView.swift in Sources */,
 				2E79A6C72BB0AD5A00A4A8F4 /* SupportView.swift in Sources */,

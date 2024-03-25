@@ -56,8 +56,7 @@ struct TabBarView: View {
                 Text("ТехПоддержка")
                     .foregroundColor(Color("blackColor"))
             }
-            
-        
+            .background(Color("whiteColor"))
         }
     }
 }
