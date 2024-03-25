@@ -20,7 +20,7 @@ struct TabBarView: View {
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
-                HomeView(user: User.mockUser)
+                EventListView()
             }
             .tabItem {
                 Image(systemName: "calendar")
@@ -30,7 +30,7 @@ struct TabBarView: View {
             }
             
             NavigationView {
-                HomeView(user: User.mockUser)
+                MapView()
             }
             .tabItem {
                 Image(systemName: "map")
@@ -39,7 +39,7 @@ struct TabBarView: View {
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
-                HomeView(user: User.mockUser)
+                FamilyView()
             }
             .tabItem {
                 Image(systemName: "figure.2.and.child.holdinghands")
@@ -48,7 +48,7 @@ struct TabBarView: View {
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
-                HomeView(user: User.mockUser)
+                SupportView()
             }
             .tabItem {
                 Image(systemName: "questionmark.circle.fill")
@@ -56,8 +56,7 @@ struct TabBarView: View {
                 Text("ТехПоддержка")
                     .foregroundColor(Color("blackColor"))
             }
-            
-        
+            .background(Color("whiteColor"))
         }
     }
 }
