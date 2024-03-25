@@ -11,10 +11,6 @@ struct EventListView: View {
     let items: [Item] = MockData.events
 
     var body: some View {
-        NavigationLink(destination: MapView()) {
-            Text("г. Альметьевск")
-                .foregroundColor(Color("blackColor"))
-        }
         NavigationView {
                     List(items) { item in
                         HStack {
@@ -31,9 +27,9 @@ struct EventListView: View {
                             }
                         }
                     }
-                    .navigationTitle("Мероприятия")
         }
-//        .background(Color("whiteColor"))
+        .navigationBarTitle(Text("Мероприятия"), displayMode: .inline)
+        .background(Color("whiteColor"))
     }
 }
 
