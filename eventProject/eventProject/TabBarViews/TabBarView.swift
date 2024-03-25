@@ -16,16 +16,26 @@ struct TabBarView: View {
             .tabItem {
                 Image(systemName: "house")
                     .foregroundColor(Color("blackColor"))
-                Text("Home")
+                Text("Дом")
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
                 HomeView(user: User.mockUser)
             }
             .tabItem {
+                Image(systemName: "calendar")
+                    .foregroundColor(Color("blackColor"))
+                Text("Мероприятия")
+                    .foregroundColor(Color("blackColor"))
+            }
+            
+            NavigationView {
+                HomeView(user: User.mockUser)
+            }
+            .tabItem {
                 Image(systemName: "map")
                     .foregroundColor(Color("blackColor"))
-                Text("Home")
+                Text("Местоположение")
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
@@ -34,7 +44,7 @@ struct TabBarView: View {
             .tabItem {
                 Image(systemName: "figure.2.and.child.holdinghands")
                     .foregroundColor(Color("blackColor"))
-                Text("Home")
+                Text("Моя семья")
                     .foregroundColor(Color("blackColor"))
             }
             NavigationView {
@@ -43,7 +53,7 @@ struct TabBarView: View {
             .tabItem {
                 Image(systemName: "questionmark.circle.fill")
                     .foregroundColor(Color("blackColor"))
-                Text("Home")
+                Text("ТехПоддержка")
                     .foregroundColor(Color("blackColor"))
             }
             
