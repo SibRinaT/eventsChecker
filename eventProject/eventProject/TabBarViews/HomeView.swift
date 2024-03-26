@@ -63,7 +63,6 @@ struct HomeView: View {
             Spacer()
         }
         .background(Color("whiteColor"))
-//        .edgesIgnoringSafeArea(.all)
         .padding(.horizontal, 10)
     }
 }
