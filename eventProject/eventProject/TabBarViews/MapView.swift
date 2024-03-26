@@ -37,7 +37,6 @@ struct MapView: View {
                         .foregroundColor(Color("orangeColor")),
                     message: Text("Предоставить доступ к вашему местоположению?"),
                     primaryButton: .default(Text("Да")) {
-//
                     },
                     secondaryButton: .cancel(Text("Отмена"))
                   )
@@ -54,7 +53,6 @@ struct MapView: View {
               Spacer()
           }
           .background(Color("whiteColor"))
-//          .edgesIgnoringSafeArea(.all)
       }
     
 }
